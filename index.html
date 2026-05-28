@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT Tridiku Teknokarya Indonesia | Advanced Technology & Engineering Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #020617; }
+        .font-display { font-family: 'Space Grotesk', sans-serif; }
+        
+        .hero-indigo {
+            background: radial-gradient(circle at 100% 100%, #0f172a 0%, #020617 100%);
+        }
+
+        .indigo-glow {
+            box-shadow: 0 0 30px rgba(79, 70, 229, 0.2);
+        }
+
+        .text-gradient {
+            background: linear-gradient(90deg, #6366f1, #38bdf8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .tech-card {
+            background: rgba(255, 255, 255, 0.01);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.04);
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .tech-card:hover {
+            transform: translateY(-6px);
+            border-color: #6366f1;
+            box-shadow: 0 20px 30px -10px rgba(99, 102, 241, 0.15);
+        }
+    </style>
+</head>
+<body class="text-slate-300 antialiased">
+
+    <nav class="fixed w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-white/5">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center shadow-lg indigo-glow">
+                    <i class="fas fa-cubes text-white text-lg"></i>
+                </div>
+                <div class="leading-none">
+                    <span class="text-xl font-display font-bold tracking-tight text-white block uppercase">TRIDIKU</span>
+                    <span class="text-[9px] uppercase tracking-[0.35em] font-bold text-indigo-400">Teknokarya</span>
+                </div>
+            </div>
+            <div class="hidden md:flex space-x-10 text-[10px] font-bold uppercase tracking-[0.3em] text-slate-400">
+                <a href="#home" class="hover:text-indigo-400 transition">Beranda</a>
+                <a href="#solutions" class="hover:text-indigo-400 transition">Solusi Teknis</a>
+                <a href="#about" class="hover:text-indigo-400 transition">Filosofi</a>
+                <a href="#contact" class="hover:text-indigo-400 transition">Kemitraan</a>
+            </div>
+            <a href="#contact" class="bg-indigo-600 hover:bg-indigo-500 text-white px-6 py-2 rounded-full text-[10px] font-bold uppercase tracking-widest transition shadow-lg shadow-indigo-600/20">
+                Hubungi Kami
+            </a>
+        </div>
+    </nav>
+
+    <header id="home" class="hero-indigo min-h-screen flex items-center pt-20 px-6 relative overflow-hidden">
+        <div class="absolute bottom-0 left-0 w-96 h-96 bg-indigo-600/5 rounded-full blur-[120px] -ml-48 -mb-24"></div>
+        
+        <div class="max-w-7xl mx-auto w-full grid lg:grid-cols-2 gap-16 items-center relative z-10">
+            <div>
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-[10px] font-bold mb-8 uppercase tracking-widest">
+                    <span class="w-2 h-2 rounded-full bg-indigo-500 animate-pulse"></span> Verified Advanced Technology Partner
+                </div>
+                <h1 class="text-5xl md:text-7xl font-display font-bold text-white mb-8 leading-[1.1] tracking-tighter uppercase">
+                    Karya Teknik, <br><span class="text-gradient">Dimensi Baru.</span>
+                </h1>
+                <p class="text-lg text-slate-400 mb-10 leading-relaxed max-w-xl font-light">
+                    PT Tridiku Teknokarya Indonesia mengintegrasikan keahlian rekayasa teknologi komprehensif, arsitektur komputasi mutakhir, dan inovasi piranti digital kustom untuk mengakselerasi potensi bisnis Anda ke level tertinggi.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#solutions" class="bg-indigo-600 text-white px-10 py-4 rounded-xl font-bold uppercase text-[11px] tracking-widest hover:bg-indigo-500 transition-all transform hover:-translate-y-1 shadow-xl shadow-indigo-600/20 text-center">
+                        Lihat Solusi Teknis
+                    </a>
+                    <a href="#contact" class="bg-slate-900 text-white px-10 py-4 rounded-xl font-bold uppercase text-[11px] tracking-widest border border-slate-800 hover:bg-slate-800 transition-all text-center">
+                        Konsultasi Sistem
+                    </a>
+                </div>
+            </div>
+            <div class="hidden lg:block relative">
+                <div class="p-4 bg-slate-900/40 rounded-3xl border border-slate-800 shadow-2xl">
+                    <div class="bg-slate-950 rounded-2xl overflow-hidden p-2 border border-slate-800">
+                        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2070&auto=format&fit=crop" alt="Advanced Engineering and Computing Infrastructure" class="rounded-xl opacity-50 hover:opacity-80 transition duration-700 grayscale hover:grayscale-0">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="solutions" class="py-32 px-6 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+                <div class="max-w-xl">
+                    <h2 class="text-3xl md:text-5xl font-display font-bold text-white mb-6 uppercase tracking-tight">Portofolio Teknologi</h2>
+                    <p class="text-slate-500 leading-relaxed font-light border-l-2 border-indigo-500 pl-8 italic">"Kami merekayasa fungsionalitas sistem digital dengan akurasi ketat demi melahirkan efisiensi operasional korporat berskala masif."</p>
+                </div>
+                <div class="text-slate-800 font-display text-5xl font-bold tracking-widest hidden lg:block">TEKNOKARYA</div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-10 rounded-3xl tech-card group">
+                    <div class="w-14 h-14 bg-indigo-950/50 text-indigo-400 rounded-2xl flex items-center justify-center mb-8 border border-indigo-800/30 group-hover:bg-indigo-600 group-hover:text-white transition-all">
+                        <i class="fas fa-laptop-code text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-display font-bold mb-4 text-white uppercase tracking-tight">Enterprise Architecture</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed font-light">Rancang bangun sistem backend terdistribusi, integrasi pangkalan data berskala besar, serta pengembangan portal web kustom korporasi.</p>
+                </div>
+                <div class="p-10 rounded-3xl tech-card group">
+                    <div class="w-14 h-14 bg-indigo-950/50 text-indigo-400 rounded-2xl flex items-center justify-center mb-8 border border-indigo-800/30 group-hover:bg-indigo-600 group-hover:text-white transition-all">
+                        <i class="fas fa-microchip text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-display font-bold mb-4 text-white uppercase tracking-tight">Smart Teknokarya</h4>
+                    <p class="text-slate-500 text-sm leading-relaxed font-light">Pengembangan solusi perangkat keras tersemat (*embedded systems*), integrasi otomasi pabrik, serta sistem pemantauan data cerdas.</p>
+                </div>
+                <div class="p-10 rounded-3xl tech-card group">
+                    <div class="w-14 h-14 bg-indigo-950/50 text-indigo-400 rounded-2xl flex items-center justify-center mb-8 border border-indigo-800/30 group-hover:bg-indigo-600 group-hover:text-white transition-all">
+                        <i class="fas fa-shield-network text-2xl"></i>
+                    </div>
+                    <h4 class="text-xl font-display font-bold mb-4 text-white uppercase tracking-tight">IT Infrastructure & Cloud</h4>
+                    <p class="text-slate-400 text-sm leading-relaxed font-light">Penyediaan arsitektur jaringan cloud terpusat yang aman, audit enkripsi perlindungan data, serta manajemen API gerbang terpadu.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-32 px-6 bg-slate-950/50 border-t border-slate-900 relative">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-24">
+            <div class="md:w-1/2">
+                <h3 class="text-4xl font-display font-bold text-white mb-8 uppercase tracking-widest">Kepatuhan Tata Kelola <br>Dan <span class="text-indigo-400 italic font-normal">Kualitas Berstandar Global.</span></h3>
+                <p class="text-slate-400 mb-10 text-lg font-light leading-relaxed">Sebagai badan hukum nasional yang sah dan terverifikasi di Indonesia, PT Tridiku Teknokarya Indonesia menempatkan transparansi kerja, kode pemrograman yang teruji bersih, serta perlindungan privasi klien di atas segalanya.</p>
+                
+                <div class="space-y-6 text-xs tracking-wider uppercase font-semibold font-mono">
+                    <div class="flex items-center gap-4">
+                        <i class="fas fa-check-circle text-indigo-400 text-lg"></i>
+                        <span class="text-slate-200">Kepatuhan Regulasi Hukum & Administrasi Korporat</span>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <i class="fas fa-user-shield text-indigo-400 text-lg"></i>
+                        <span class="text-slate-200">Prosedur Enkripsi Ketat untuk Manajemen Aset Digital</span>
+                    </div>
+                </div>
+            </div>
+            <div class="md:w-1/2 w-full">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop" alt="Global Cybersecurity Data Flow" class="rounded-3xl shadow-2xl grayscale border border-slate-800">
+                    <div class="absolute -bottom-8 -right-8 bg-indigo-600 p-8 hidden md:block rounded-2xl shadow-xl">
+                        <i class="fas fa-diagram-project text-4xl text-slate-950"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-slate-950 py-32 px-6 border-t border-slate-900">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl md:text-6xl font-display font-bold text-white mb-10 tracking-tight uppercase">Hubungi Markas Rekayasa Kami</h2>
+            <p class="text-slate-500 mb-16 text-lg font-light">Kami siap mendengarkan visi transformasi sistem Anda. Hubungi tim teknis kami untuk keperluan integrasi produk, konsultasi arsitektur IT, maupun korespondensi korporat resmi.</p>
+            
+            <div class="grid md:grid-cols-2 gap-8 text-left mb-20">
+                <div class="p-10 bg-slate-900/30 border border-slate-800 rounded-3xl flex flex-col justify-center">
+                    <p class="text-indigo-400 text-[10px] uppercase tracking-widest mb-4 font-bold">Official Registered Corporate Entity</p>
+                    <p class="text-white font-display text-md font-bold tracking-wide uppercase leading-relaxed">PT TRIDIKU TEKNOKARYA INDONESIA</p>
+                    <p class="text-xs text-slate-500 mt-1">Indonesia</p>
+                </div>
+                <div class="p-10 border border-slate-800 rounded-3xl bg-slate-900/30 flex flex-col justify-center">
+                    <p class="text-indigo-400 text-[10px] uppercase tracking-widest mb-4 font-bold">Corporate Communications</p>
+                    <p class="text-white font-bold text-md tracking-widest uppercase">info@tridiku.co.id</p>
+                    <p class="text-xs text-slate-500 mt-2 font-mono">Secure Enterprise Channel Apply</p>
+                </div>
+            </div>
+
+            <div class="flex flex-col items-center pt-20 border-t border-slate-900 gap-10">
+                <div class="flex items-center gap-3">
+                    <div class="w-8 h-8 bg-indigo-600 rounded flex items-center justify-center">
+                        <i class="fas fa-cubes text-slate-950 text-xs"></i>
+                    </div>
+                    <span class="text-xs font-bold tracking-[0.5em] uppercase text-white leading-none">PT Tridiku Teknokarya Indonesia</span>
+                </div>
+                <p class="text-[9px] text-slate-600 uppercase tracking-[0.5em] font-bold">
+                    &copy; 2026 PT Tridiku Teknokarya Indonesia. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
